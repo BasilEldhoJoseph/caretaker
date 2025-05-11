@@ -26,9 +26,9 @@ const Navbar = () => {
     const menuOptions = [
       { text: "Home", icon: <HomeIcon />, href: "#home" },
       { text: "About", icon: <InfoIcon />, href: "#about" },
-      { text: "Testimonials", icon: <CommentRoundedIcon />, href: "#testimonials" },
+      //{ text: "Testimonials", icon: <CommentRoundedIcon />, href: "#testimonials" },
       { text: "Contact", icon: <PhoneRoundedIcon />, href: "#contact" },
-      { text: "Cart", icon: <ShoppingCartRoundedIcon />, href: "#contact" }, // or wherever cart leads
+      //{ text: "Cart", icon: <ShoppingCartRoundedIcon />, href: "#contact" }, // or wherever cart leads
     ];
     
 
@@ -38,28 +38,25 @@ const Navbar = () => {
     <div className="nav-logo-container">
       <img src={Logo} alt="" />
     </div>
-    <div className="navbar-links-container">
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#testimonials">Testimonials</a>
-  <a href="#contact">Contact</a>
-  <a href="#contact">
-    <BsCart2 className="navbar-cart-icon" />
-  </a>
-  <button className="primary-button">
-  <a 
-  href="#contact"
-  style={{ 
-    color: "black", 
-    textDecoration: "none" 
+  <div className="navbar-links-container">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      
+      <a href="#contact">Contact</a>
+      
+      <button
+  className="primary-button"
+  onClick={() => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
   }}
-  onMouseOver={(e) => e.currentTarget.style.textDecoration = "underline"}
-  onMouseOut={(e) => e.currentTarget.style.textDecoration = "none"}
 >
-      Book Now 
-    </a>
-  </button>
-</div>
+  Book Now
+</button>
+
+  </div>
 
     <div className="navbar-menu-container">
       <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
