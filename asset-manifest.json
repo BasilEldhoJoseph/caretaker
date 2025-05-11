@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/caretaker/static/css/main.320249c2.css",
-    "main.js": "/caretaker/static/js/main.6e56cbd9.js",
-    "static/media/about-background-image.png": "/caretaker/static/media/about-background-image.d0e45280dd69dec26ee6.png",
+    "main.css": "/caretaker/static/css/main.e7a05e1b.css",
+    "main.js": "/caretaker/static/js/main.e262899d.js",
     "static/media/image-modified.png": "/caretaker/static/media/image-modified.0af38d1fefdedf32ab36.png",
+    "static/media/workimage.png": "/caretaker/static/media/workimage.cf4014c1a950ba2fcdf9.png",
     "static/media/home-banner-background.png": "/caretaker/static/media/home-banner-background.585600da7ff85661555e.png",
     "static/media/Orange Black Modern Building Logo Design (1).svg": "/caretaker/static/media/Orange Black Modern Building Logo Design (1).1f8bff519467eecb0757e9e7d19115c1.svg",
     "static/media/Logo.svg": "/caretaker/static/media/Logo.e04f4319ea0059a833b1ca8d03810b60.svg",
     "index.html": "/caretaker/index.html",
-    "main.320249c2.css.map": "/caretaker/static/css/main.320249c2.css.map",
-    "main.6e56cbd9.js.map": "/caretaker/static/js/main.6e56cbd9.js.map"
+    "main.e7a05e1b.css.map": "/caretaker/static/css/main.e7a05e1b.css.map",
+    "main.e262899d.js.map": "/caretaker/static/js/main.e262899d.js.map"
   },
   "entrypoints": [
-    "static/css/main.320249c2.css",
-    "static/js/main.6e56cbd9.js"
+    "static/css/main.e7a05e1b.css",
+    "static/js/main.e262899d.js"
   ]
 }
