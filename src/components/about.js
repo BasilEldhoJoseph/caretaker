@@ -1,6 +1,6 @@
 import React from "react";
 import AboutBackground from "../Landing Page Assets/about-background.png";
-import AboutBackgroundImage from "../Landing Page Assets/about-background-image.png";
+import AboutBackgroundImage from "../Landing Page Assets/workimage.png";
 import { BsFillPlayCircleFill } from "react-icons/bs";
 
 const About = () =>
@@ -24,12 +24,12 @@ const About = () =>
         </h1>
 
         <p className="primary-text">
-          Dust bunnies? Mystery stains? Bathroom horrors? Don’t worry — I tackle the mess so your Kerala home looks like a postcard when you arrive.
+          Dust bunnies? Mystery stains? Bathroom horrors? Don’t worry — We will tackle the mess so your Kerala home looks like a postcard when you arrive.
         </p>
         
         <p className="primary-text">
           Trustworthy, efficient, and allergic to dirt.  
-          You relax. I’ll handle the chaos.
+          You relax while we handle the chaos.
         </p>
 
         <div className="about-buttons-container">

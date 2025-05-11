@@ -1,49 +1,69 @@
 import React from "react";
-import PickMeals from "../Landing Page Assets/pick-meals-image.png";
-import ChooseMeals from "../Landing Page Assets/choose-image.png";
-import DeliveryMeals from "../Landing Page Assets/delivery-image.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 
-const Work = () => {
-  const workInfoData = [
-    {
-      image: PickMeals,
-      title: "Pick Meals",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et sagittis duis elementum interdum facilisi bibendum.",
-    },
-    {
-      image: ChooseMeals,
-      title: "Choose How Often",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
-    },
-    {
-      image: DeliveryMeals,
-      title: "Fast Deliveries",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
-    },
-  ];
+const servicesData = [
+  {
+    title: "Full House Cleaning",
+    text: "Complete interior cleaning of every room — spotless and fresh!",
+  },
+  {
+    title: "Kitchen & Bathroom Deep Cleaning",
+    text: "We tackle the grime so you don't have to — every tile and tap shines!",
+  },
+  {
+    title: "Dusting & Floor Polishing",
+    text: "Say goodbye to dust bunnies and dull tiles — hello shine!",
+  },
+  {
+    title: "Garden & Outdoor Area Clean-Up",
+    text: "Neat lawns, clean paths, and fresh air — your outdoors, perfected.",
+  },
+  {
+    title: "Pre-arrival and Post-departure Maintenance",
+    text: "We prep your space before you arrive and tidy up after you're gone.",
+  },
+  {
+    title: "Regular House Visits (for NRI homeowners)",
+    text: "Peace of mind from afar — we keep an eye on your home while you're away.",
+  },
+];
+
+const Services = () => {
   return (
-    <div className="work-section-wrapper">
-      <div className="work-section-top">
-        <p className="primary-subheading">Work</p>
-        <h1 className="primary-heading">How It Works</h1>
+    <div className="services-section-wrapper" id="services">
+      <div className="services-section-top">
+        <p className="primary-subheading">Services</p>
+        <h1 className="primary-heading">What We Offer</h1>
         <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+          Your home, vacation-ready — here’s what we take care of for you:
         </p>
       </div>
-      <div className="work-section-bottom">
-        {workInfoData.map((data) => (
-          <div className="work-section-info" key={data.title}>
-            <div className="info-boxes-img-container">
-              <img src={data.image} alt="" />
+
+      <Swiper
+        modules={[Pagination]}
+        pagination={{ clickable: true }}
+        spaceBetween={30}
+        slidesPerView={1}
+        breakpoints={{
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+      >
+        {servicesData.map((service, index) => (
+          <SwiperSlide key={index}>
+            <div className="service-card">
+              <h2 className="service-title">{service.title}</h2>
+              <p className="service-text">{service.text}</p>
             </div>
-            <h2>{data.title}</h2>
-            <p>{data.text}</p>
-          </div>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </div>
   );
 };
 
-export default Work;
+export default Services;

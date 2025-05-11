@@ -430,3 +430,46 @@ nav {
     display: none;
   }
 }
+.services-section-wrapper {
+  padding: 10rem 2rem;
+  background-color: transparent;
+}
+
+.service-card {
+  background: linear-gradient(to bottom, #f6f6f6, #fe9e0d); /* Gradient from pink to orange */
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+
+.service-card:hover {
+  transform: translateX(10px); /* Move card slightly to the right when hovered */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Optional: Add a stronger shadow on hover */
+}
+
+
+
+.service-img img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.service-card .service-title {
+  font-size: 1.5rem; /* Adjust the size as needed */
+  font-weight: bold; /* Optional: Makes the title bold */
+  line-height: 2.5rem;
+}
+
+.service-card .service-text {
+  font-size: 1.4rem; /* Adjust the size as needed */
+  line-height: 1.5; /* Optional: Adjusts the line spacing */
+  font-style: italic;
+}
