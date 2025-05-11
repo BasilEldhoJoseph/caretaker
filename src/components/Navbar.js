@@ -24,27 +24,13 @@ import { WhatsApp } from "@mui/icons-material";
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);
     const menuOptions = [
-      {
-        text: "Home",
-        icon: <HomeIcon />,
-      },
-      {
-        text: "About",
-        icon: <InfoIcon />,
-      },
-      {
-        text: "Testimonials",
-        icon: <CommentRoundedIcon />,
-      },
-      {
-        text: "Contact",
-        icon: <PhoneRoundedIcon />,
-      },
-      {
-        text: "Cart",
-        icon: <ShoppingCartRoundedIcon />,
-      },
+      { text: "Home", icon: <HomeIcon />, href: "#home" },
+      { text: "About", icon: <InfoIcon />, href: "#about" },
+      { text: "Testimonials", icon: <CommentRoundedIcon />, href: "#testimonials" },
+      { text: "Contact", icon: <PhoneRoundedIcon />, href: "#contact" },
+      { text: "Cart", icon: <ShoppingCartRoundedIcon />, href: "#contact" }, // or wherever cart leads
     ];
+    
 
   return (
     <nav>
@@ -53,15 +39,28 @@ const Navbar = () => {
       <img src={Logo} alt="" />
     </div>
     <div className="navbar-links-container">
-      <a href="">Home</a>
-      <a href="">About</a>
-      <a href="">Testimonials</a>
-      <a href="">Contact</a>
-      <a href="">
-        <BsCart2 className="navbar-cart-icon" />
-      </a>
-      <button className="primary-button">Book Now</button>
-    </div>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#contact">Contact</a>
+  <a href="#contact">
+    <BsCart2 className="navbar-cart-icon" />
+  </a>
+  <button className="primary-button">
+  <a 
+  href="#contact"
+  style={{ 
+    color: "black", 
+    textDecoration: "none" 
+  }}
+  onMouseOver={(e) => e.currentTarget.style.textDecoration = "underline"}
+  onMouseOut={(e) => e.currentTarget.style.textDecoration = "none"}
+>
+      Book Now 
+    </a>
+  </button>
+</div>
+
     <div className="navbar-menu-container">
       <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
     </div>
@@ -75,10 +74,13 @@ const Navbar = () => {
           <List>
             {menuOptions.map((item) => (
               <ListItem key={item.text} disablePadding>
-                <ListItemButton>
-                  <ListItemIcon>{item.icon}</ListItemIcon>
-                  <ListItemText primary={item.text} />
-                </ListItemButton>
+                <a href={item.href} style={{ textDecoration: 'none', color: 'inherit' }}>
+  <ListItemButton>
+    <ListItemIcon>{item.icon}</ListItemIcon>
+    <ListItemText primary={item.text} />
+  </ListItemButton>
+</a>
+
               </ListItem>
             ))}
           </List>
