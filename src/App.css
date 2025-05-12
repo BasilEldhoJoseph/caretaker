@@ -414,16 +414,21 @@ nav {
     flex-direction: column;
   }
   .footer-section-two {
+    display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
   .footer-section-columns {
-    margin: 1rem 0rem;
+    display: flex;
+    margin: 1rem 5rem;
+    margin-left: 0rem;
   }
   .App {
     max-width: 95vw;
   }
+  
 }
+
 @media (max-width: 600px) {
   .home-bannerImage-container,
   .about-background-image-container {

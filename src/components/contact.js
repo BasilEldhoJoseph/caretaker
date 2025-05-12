@@ -2,15 +2,16 @@ import React, { useState } from "react";
 
 const Contact = () => {
   const [name, setName] = useState("");
+  const [place, setPlace] = useState("");
 
   const handleClick = (e) => {
-    if (!name.trim()) {
+    if (!name.trim() || !place.trim()) {
       e.preventDefault();
-      alert("Please enter your name before booking a service.");
+      alert("Please enter both your name and place before booking a service.");
     }
   };
 
-  const message = `Hi, I am ${name}. I'm interested in your cleaning services`;
+  const message = `Hi, I am ${name} from ${place}. I'm interested in your cleaning services.`;
   const whatsappLink = `https://wa.me/918590398159?text=${encodeURIComponent(message)}`;
 
   return (
@@ -23,6 +24,12 @@ const Contact = () => {
           placeholder="Your name"
           value={name}
           onChange={(e) => setName(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="Your place"
+          value={place}
+          onChange={(e) => setPlace(e.target.value)}
         />
         <a
           href={whatsappLink}
