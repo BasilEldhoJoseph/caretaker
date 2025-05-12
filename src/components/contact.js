@@ -35,7 +35,7 @@ const Contact = () => {
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="secondary-button"
+          className="secondary-button no-underline"
           onClick={handleClick}
         >
           Book A Service Now
