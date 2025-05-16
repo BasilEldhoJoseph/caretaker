@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/caretaker/static/css/main.f089f982.css",
-    "main.js": "/caretaker/static/js/main.d7c0df90.js",
-    "static/media/image-modified.png": "/caretaker/static/media/image-modified.0af38d1fefdedf32ab36.png",
-    "static/media/workimage.png": "/caretaker/static/media/workimage.cf4014c1a950ba2fcdf9.png",
-    "static/media/WhatsApp Image 2025-05-12 at 22.23.31_6253646a.jpg": "/caretaker/static/media/WhatsApp Image 2025-05-12 at 22.23.31_6253646a.f3d6cc19a723107d5180.jpg",
-    "static/media/home-banner-background.png": "/caretaker/static/media/home-banner-background.585600da7ff85661555e.png",
-    "static/media/Orange Black Modern Building Logo Design (1).svg": "/caretaker/static/media/Orange Black Modern Building Logo Design (1).1f8bff519467eecb0757e9e7d19115c1.svg",
-    "index.html": "/caretaker/index.html",
-    "main.f089f982.css.map": "/caretaker/static/css/main.f089f982.css.map",
-    "main.d7c0df90.js.map": "/caretaker/static/js/main.d7c0df90.js.map"
+    "main.css": "/static/css/main.f089f982.css",
+    "main.js": "/static/js/main.a3d65463.js",
+    "static/media/image-modified.png": "/static/media/image-modified.0af38d1fefdedf32ab36.png",
+    "static/media/workimage.png": "/static/media/workimage.cf4014c1a950ba2fcdf9.png",
+    "static/media/WhatsApp Image 2025-05-12 at 22.23.31_6253646a.jpg": "/static/media/WhatsApp Image 2025-05-12 at 22.23.31_6253646a.f3d6cc19a723107d5180.jpg",
+    "static/media/home-banner-background.png": "/static/media/home-banner-background.585600da7ff85661555e.png",
+    "static/media/Orange Black Modern Building Logo Design (1).svg": "/static/media/Orange Black Modern Building Logo Design (1).1f8bff519467eecb0757e9e7d19115c1.svg",
+    "index.html": "/index.html",
+    "main.f089f982.css.map": "/static/css/main.f089f982.css.map",
+    "main.a3d65463.js.map": "/static/js/main.a3d65463.js.map"
   },
   "entrypoints": [
     "static/css/main.f089f982.css",
-    "static/js/main.d7c0df90.js"
+    "static/js/main.a3d65463.js"
   ]
 }
