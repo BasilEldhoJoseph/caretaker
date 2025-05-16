@@ -12,7 +12,7 @@ const Contact = () => {
   };
 
   const message = `Hi, I am ${name} from ${place}. I'm interested in your cleaning services.`;
-  const whatsappLink = `https://wa.me/918590398159?text=${encodeURIComponent(message)}`;
+  const whatsappLink = `https://wa.me/918075562609?text=${encodeURIComponent(message)}`;
 
   return (
     <div className="contact-page-wrapper">

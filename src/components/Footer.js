@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../Landing Page Assets/WhatsApp Image 2025-05-12 at 22.23.31_6253646a.jpg";
+import Logo from "../Landing Page Assets/shine.jpg";
 import { BsTwitter } from "react-icons/bs";
 import { SiLinkedin } from "react-icons/si";
 import { BsYoutube } from "react-icons/bs";
@@ -10,7 +10,8 @@ const Footer = () => {
     <div className="footer-wrapper">
       <div className="footer-section-one">
         <div className="footer-logo-container">
-          <img src={Logo} alt="" />
+          {/* <img src={Logo} alt="" /> */}
+
         </div>
         
       </div>
