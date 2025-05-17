@@ -24,7 +24,7 @@ const Footer = () => {
           
         </div>
         <div className="footer-section-columns">
-          <span>CALL US: +918075562609 </span>
+          <span>CALL US: +917902506465 </span>
           <span>Shine mathew</span>
           <span>Puttumanoor </span>
           <span>Puthencruz </span>
