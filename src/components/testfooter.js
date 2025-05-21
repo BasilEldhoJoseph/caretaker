@@ -78,7 +78,7 @@ const Footer = () => {
       <div style={styles.developerBar}>
         👨‍💻 Crafted with code & creativity by{" "}
         <a
-          href="https://basileldhojoseph.github.io/Basil-EJ-Portfolio/#"
+          href="-------"
           style={styles.developerLink}
           target="_blank"
           rel="noreferrer"
@@ -88,7 +88,7 @@ const Footer = () => {
         . Ready to launch your digital journey? Let’s connect!
         {/* Call and Mail icons */}
         <a
-          href="tel:+917902506465"
+          href="tel:+8590398159"
           style={styles.inlineIconLink}
           title="Call us"
         >
