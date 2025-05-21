@@ -1,4 +1,5 @@
 import React from "react";
+
 import Logo from "../Landing Page Assets/shine.jpg";
 import { BsTwitter } from "react-icons/bs";
 import { SiLinkedin } from "react-icons/si";
@@ -35,8 +36,14 @@ const Footer = () => {
          
         </div>
       </div>
+      
     </div>
+    
+    
+    
   );
 };
+
+
 
 export default Footer;
