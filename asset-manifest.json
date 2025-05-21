@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e6d0417c.css",
-    "main.js": "/static/js/main.199ba9de.js",
+    "main.js": "/static/js/main.a75e8979.js",
     "static/media/image-modified.png": "/static/media/image-modified.0af38d1fefdedf32ab36.png",
     "static/media/workimage.png": "/static/media/workimage.cf4014c1a950ba2fcdf9.png",
     "static/media/shine.jpg": "/static/media/shine.2cd4a37cd106ba65d9f5.jpg",
@@ -10,10 +10,10 @@
     "static/media/Orange Black Modern Building Logo Design (1).svg": "/static/media/Orange Black Modern Building Logo Design (1).1f8bff519467eecb0757e9e7d19115c1.svg",
     "index.html": "/index.html",
     "main.e6d0417c.css.map": "/static/css/main.e6d0417c.css.map",
-    "main.199ba9de.js.map": "/static/js/main.199ba9de.js.map"
+    "main.a75e8979.js.map": "/static/js/main.a75e8979.js.map"
   },
   "entrypoints": [
     "static/css/main.e6d0417c.css",
-    "static/js/main.199ba9de.js"
+    "static/js/main.a75e8979.js"
   ]
 }
