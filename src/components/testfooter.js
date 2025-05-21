@@ -34,7 +34,7 @@ const Footer = () => {
             },
             {
               icon: <BsEnvelopeFill style={styles.icon} />,
-              text: "shine.mathew@example.com",
+              text: "Shinescaretaker@gmail.com"
             },
             {
               icon: <FaMapMarkerAlt style={styles.icon} />,
@@ -56,15 +56,15 @@ const Footer = () => {
           {/* Social Media Icons */}
           <div style={styles.socialIcons}>
             {[
-              { Icon: FaFacebookF, link: "https://facebook.com/shine" },
-              { Icon: FaInstagram, link: "https://instagram.com/shine" },
+              { Icon: FaFacebookF, link: "https://facebook.com/" },
+              { Icon: FaInstagram, link: "https://www.instagram.com/c.a.r.e.takers?igsh=bDVndGNwYWI1bTI0"}
             ].map(({ Icon, link }, idx) => (
               <a
                 key={idx}
                 href={link}
                 target="_blank"
                 rel="noreferrer"
-                style={styles.socialLink}
+                style={styles.socialLink} 
                 className="social-icon"
               >
                 <Icon />
